@@ -5,15 +5,14 @@
 # Date of latest revision:
 # Purpose: Domain Analyzer - Create a script that asks a user to type a domain, then displays information about the typed domain
 
-
+echo enter a domain name
+read domain
 function domain () {
-    whois $M >> output.txt
-    dig $M >> output.txt
-    host $M >> output.txt
-    nslookup $M >> output.txt
+    whois $M
+    dig $M
+    host $M
+    nslookup $M
 
 }
 
-echo input a domain name
-    read M
-    domain
+domain > output.txt
