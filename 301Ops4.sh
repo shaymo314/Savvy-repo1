@@ -7,7 +7,10 @@
 
 # Main
 
-e=Y
+shopt -s nocasematch;
+
+e
+=Y
 
 while [ $e = Y ]
 do
